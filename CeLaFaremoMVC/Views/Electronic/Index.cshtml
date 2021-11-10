@@ -1,0 +1,102 @@
+﻿@model IEnumerable<CeLaFaremoMVC.Models.Electronic>
+
+@{
+    ViewData["Title"] = "Electronic Index";
+}
+
+@*questo model count qui sotto ci serve per dire che se abbiamo piu di 0 elementi da mostrare
+    li faremo vedere
+    altrimenti diremo che non abbiamo nulla in questa pagina, in modo specifico non abbiamo cose nella tabella di questo db*@
+@if (Model.Count() > 0)
+{
+    <h1 style="text-align:center">LIST OF ELECTRONIC STUFF</h1>
+    <br />
+    @*The <div> tag defines a division or a section in an HTML document*@
+    <div class="container">
+        <table class="table table-bordered table-striped" style="width:auto; margin-left: auto;margin-right: auto;">
+            @*The <thead> tag is used to group header content in an HTML table*@
+            <thread>
+                <tr>
+                    @* tr => table row => riga*@
+                    <td id="headTextColor">
+                        @*td => table data*@
+                        Category Id
+                    </td>
+                    <td id="headTextColor">
+                        Category
+                    </td>
+                    <td id="headTextColor">
+                        Modify or Delete
+                    </td>
+                </tr>
+            </thread>
+            <tbody>
+                @*The <tbody> tag is used to group the body content in an HTML table*@
+                @foreach (var electronic in Model)
+                {
+                    <tr style="text-align:center">
+                        <td width="35%">@electronic.Id</td>
+                        <td width="35%">@electronic.Category</td>
+                        <td width="30%">
+                            <div class="w-100 btn-group" role="group">
+                                <a asp-controller="Electronic" asp-action="Update" asp-route-Id="@electronic.Id" class="btn btn-success mx-1">Modify</a>
+                                <a asp-controller="Electronic" asp-action="Delete" asp-route-Id="@electronic.Id" class="btn btn-danger mx-1">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                @*l'anchor serve proprio per trasferici poi su un'altra pagina
+                    <a>: The Anchor element. The <a> HTML element (or anchor element), with its href attribute,
+                        creates a hyperlink to web pages, files, email addresses, locations in the same page,
+                        or anything else a URL can address. Content within each <a> should indicate the link's destination.*@
+
+                @*con questo a (che sarebbe un anchor) lo uso per creare un bottone che una volta cliccato mi porta alla mia pagina
+                    tramite la action create*@
+                @*mx-1 mi serve per creare spazio tra i buttons*@
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <br />
+    <div style="text-align:center">
+        <h1>
+            <i class="fas fa-user-astronaut" style="color:greenyellow"></i>
+            <a id="aHover" href="https://i.kym-cdn.com/entries/icons/original/000/027/100/_103330503_musk3.jpg">WARNING</a>
+            <i class="fas fa-space-shuttle" style="color:red"></i>
+        </h1>
+        <p>
+            <h2>Elon Muskio has stolen your List of Object</h2>
+        </p>
+        <h2>so...</h2>
+        <p>
+            <h3 style="color:yellow">there is no argument in this section!</h3>
+        </p>
+        <p>
+            <h2>but...</h2>
+        </p>
+        <p>
+            <h4 style="color:greenyellow">You can create a new Electronic Field,</h4>
+        </p>
+        <p>
+            <h4 style="color:white">
+                <i class="fas fa-hand-point-down" style="color:greenyellow"></i>
+                click on the button below
+                <i class="fas fa-hand-point-down" style="color:red"></i>
+            </h4>
+        </p>
+    </div>
+    <br />
+}
+<div style="text-align:center">
+    @*l'anchor serve proprio per trasferici poi su un'altra pagina
+        <a>: The Anchor element. The <a> HTML element (or anchor element), with its href attribute,
+            creates a hyperlink to web pages, files, email addresses, locations in the same page,
+            or anything else a URL can address. Content within each <a> should indicate the link's destination.*@
+
+    @*con questo a (che sarebbe un anchor) lo uso per creare un bottone che una volta cliccato mi porta alla mia pagina
+        tramite la action create*@
+    <a id="btnCreate" class="btn btn-danger" asp-controller="Electronic" asp-action="Create">Create a New Electronic Field</a>
+</div>

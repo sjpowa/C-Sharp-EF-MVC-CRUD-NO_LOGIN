@@ -1,0 +1,51 @@
+﻿@model CeLaFaremoMVC.Models.Laptop
+
+@{
+    ViewData["Title"] = "Delete Laptop";
+}
+<h2 style="color:yellow ;text-align:center">ARE YOU SURE???</h2>
+<br />
+<form method="post" asp-action="DeletePost" asp-route-Id="@Model.Id">
+    <table class="table table-bordered table-striped" style="width:auto; margin-left: auto;margin-right: auto; width:35%">
+        <tr>
+            <td>
+                <label asp-for="Id" style="color:red; text-align:center">Id</label>
+                <input asp-for="Id" placeholder="Insert the ID" style="float: right; width: 60%;" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Brand" style="color:red; text-align:center">Brand</label>
+                <input asp-for="Brand" placeholder="Brand Name..." style="float: right; width: 60%;" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Modello" style="color:red; text-align:center">Model</label>
+                <input asp-for="Modello" placeholder="Model.." style="float: right; width: 60%;" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="RamMemory" style="color:red; text-align:center">Ram</label>
+                <input asp-for="RamMemory" placeholder="Ram Qty in Gb..." style="float: right; width: 60%;" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="SsdMemory" style="color:red; text-align:center">SSD</label>
+                <input asp-for="SsdMemory" placeholder="SSD Memory Qty Mb..." style="float: right; width: 60%;" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="ElectronicId" style="color:red; text-align:center">ELECTRONIC ID</label>
+                <input asp-for="ElectronicId" placeholder="ID of the Electronic Field" style="float:right; width:60%;" disabled>
+            </td>
+        </tr>
+    </table>
+    <div style="text-align:center">
+        <input type="submit" value="Delete" class="btn btn-danger" width="65" />
+        <a asp-controller="Laptop" asp-action="Index" class="btn btn-success" style="margin-left:5px">Go Back</a>
+    </div>
+</form>
