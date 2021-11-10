@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CeLaFaremoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211110202233_migrazionEnums666441")]
-    partial class migrazionEnums666441
+    [Migration("20211110225044_iHaveNeverDoneAMigration")]
+    partial class iHaveNeverDoneAMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
