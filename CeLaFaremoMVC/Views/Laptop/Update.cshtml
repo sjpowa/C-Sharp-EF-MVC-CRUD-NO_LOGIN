@@ -44,15 +44,6 @@
             </td>
         </tr>
         <tr>
-            <td>
-                <label asp-for="Categories" style="color:red; text-align:center">Category</label>
-                <select asp-for="Categories" asp-items="@Html.GetEnumSelectList<Categories>()"  style="float: right; width: 60%;">
-                    <option>
-                        Choose the Category
-                    </option>
-                </select>
-                <span asp-validation-for="Categories"></span>
-            </td>
         </tr>
         <tr>
             <td>

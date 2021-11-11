@@ -15,7 +15,6 @@ namespace CeLaFaremoMVC.Models
         public string Modello { get; set; }
         public int RamMemory { get; set; }
         public int SsdMemory { get; set; }
-        public Categories Categories { get; set; }
         public int ElectronicId { get; set; }
     }
 }

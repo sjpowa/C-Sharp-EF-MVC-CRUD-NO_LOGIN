@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CeLaFaremoMVC.Migrations
 {
-    public partial class iHaveNeverDoneAMigration : Migration
+    public partial class iSwearThisWillBeMyLastMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,7 +36,6 @@ namespace CeLaFaremoMVC.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     RamMemory = table.Column<int>(type: "int", nullable: false),
                     SsdMemory = table.Column<int>(type: "int", nullable: false),
-                    Categories = table.Column<int>(type: "int", nullable: false),
                     ElectronicId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

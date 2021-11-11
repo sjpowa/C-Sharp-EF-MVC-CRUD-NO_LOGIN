@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CeLaFaremoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211110225044_iHaveNeverDoneAMigration")]
-    partial class iHaveNeverDoneAMigration
+    [Migration("20211111114639_iSwearThisWillBeMyLastMigration")]
+    partial class iSwearThisWillBeMyLastMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,9 +40,6 @@ namespace CeLaFaremoMVC.Migrations
 
                     b.Property<string>("Brand")
                         .HasColumnType("longtext");
-
-                    b.Property<int>("Categories")
-                        .HasColumnType("int");
 
                     b.Property<int>("ElectronicId")
                         .HasColumnType("int");

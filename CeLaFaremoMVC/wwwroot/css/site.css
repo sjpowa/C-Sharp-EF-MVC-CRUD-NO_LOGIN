@@ -1,9 +1,14 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+hr {
+    border-color:whitesmoke;
+    width: 500px;
+}
+
 #colorNavBar {
     background-color: black;
-    border-bottom: 10px;
+    border-bottom: 3px solid;
     border-bottom-color: greenyellow;
 }
 
@@ -183,17 +188,15 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 9%;
+    /* Margin bottom by footer height */
+    margin-bottom: 9%;
 }
 .footer {
-    background-color: yellow;
     position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
-    
 }
 
 #footer {

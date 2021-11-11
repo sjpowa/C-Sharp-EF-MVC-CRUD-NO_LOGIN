@@ -39,9 +39,6 @@ namespace CeLaFaremoMVC.Migrations
                     b.Property<string>("Brand")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Categories")
-                        .HasColumnType("int");
-
                     b.Property<int>("ElectronicId")
                         .HasColumnType("int");
 
