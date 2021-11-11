@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CeLaFaremoMVC.Enums
 {
     public enum Categories
-    {
+    { 
         Laptop,
         Phone,
         Monitor,

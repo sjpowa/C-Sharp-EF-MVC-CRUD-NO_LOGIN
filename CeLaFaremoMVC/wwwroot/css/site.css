@@ -3,6 +3,8 @@ for details on configuring this project to bundle and minify static web assets. 
 
 #colorNavBar {
     background-color: black;
+    border-bottom: 10px;
+    border-bottom-color: greenyellow;
 }
 
 a.navbar-brand {
@@ -16,11 +18,21 @@ a.navbar-brand {
 }
 
 #nameProjectBar {
+    color:whitesmoke;
     margin-left: 2%;
 }
 
-a {
-    color: yellow;
+#nameProjectBar:hover {
+    color: cyan;
+}
+
+#leftFrog {
+    color:greenyellow
+}
+
+#rightFrog {
+    color: red;
+    /*transform: scaleX(-1)*/ /*non mi piace flippato ma al momento lo tengo commentato per ricordarmi come si fa*/
 }
 
 #btnCreate {
@@ -32,6 +44,66 @@ a {
 #btnCreate:hover {
     background-color: blue;
     border-color: red;
+    color: yellow;
+}
+
+#TopTextFooter {
+    color: greenyellow;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#TopTextFooter:hover {
+    color:yellow;
+}
+
+#twitch {
+    color: white;
+}
+
+#twitch:hover {
+    color: #6441a5;
+    text-decoration: none;
+}
+
+#youtube {
+    color: white;
+}
+
+#youtube:hover {
+    color: red;
+    text-decoration: none
+}
+
+#instagram {
+    color: white;
+}
+
+#instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none
+}
+
+#privacy {
+    color: red;
+    text-align: center;
+    display: block;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+#privacy:hover {
+    color:yellow;
+    text-decoration: none
+}
+
+a {
     color: yellow;
 }
 
@@ -112,12 +184,20 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 9%;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    
+}
+
+#footer {
+    background-color:black;
+    border-top: 3px solid;
+    border-top-color: rgb(244 5 5 / 0.93);
 }

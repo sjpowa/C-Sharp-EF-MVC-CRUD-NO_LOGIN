@@ -11,7 +11,7 @@ namespace CeLaFaremoMVC.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
+             
         }
         public DbSet<Electronic> Electronics {get;set;}
         public DbSet<Laptop> Laptops {get;set;}

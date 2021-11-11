@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CeLaFaremoMVC.Controllers
 {
     public class HomeController : Controller
-    {
+    { 
         public IActionResult Index()
         {
             return View();

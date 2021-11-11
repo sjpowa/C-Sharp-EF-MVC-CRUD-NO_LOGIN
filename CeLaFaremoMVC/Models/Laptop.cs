@@ -9,7 +9,7 @@ namespace CeLaFaremoMVC.Models
 {
     public class Laptop
     {
-        [Key]
+        [Key] 
         public int Id { get; set; }
         public string Brand { get; set; }
         public string Modello { get; set; }

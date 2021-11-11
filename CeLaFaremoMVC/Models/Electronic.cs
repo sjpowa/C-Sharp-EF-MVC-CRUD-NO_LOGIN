@@ -9,7 +9,7 @@ namespace CeLaFaremoMVC.Models
 {
     public class Electronic
     {
-        [Key]
+        [Key] 
         public int Id { get; set; }
         public Categories Category { get; set; }
         public List<Laptop> Laptops { get; set; }

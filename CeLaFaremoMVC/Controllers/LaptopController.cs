@@ -15,7 +15,7 @@ namespace CeLaFaremoMVC.Controllers
         // facciamo u costruttore vuoto per collegarci al db
         // questo db poi lo useremo per collegarci alla "tabella" che vogliamo del nostro database
         public LaptopController(ApplicationDbContext db)
-        {
+        { 
             _db = db;
         }
 
