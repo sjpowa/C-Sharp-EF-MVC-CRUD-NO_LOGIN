@@ -42,7 +42,6 @@ namespace CeLaFaremoMVC.Controllers
         [HttpPost]
         public IActionResult Create(Electronic obj, Categories cat)
         {
-            
             _db.Electronics.Add(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");

@@ -5,7 +5,6 @@ C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFar
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.runtimeconfig.json
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.runtimeconfig.dev.json
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.dll
-C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\ref\CeLaFaremoMVC.dll
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.pdb
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.Views.dll
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\bin\Debug\net5.0\CeLaFaremoMVC.Views.pdb
@@ -128,3 +127,4 @@ C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\obj\Debug\net5.0\ref\CeL
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\obj\Debug\net5.0\CeLaFaremoMVC.pdb
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\obj\Debug\net5.0\CeLaFaremoMVC.genruntimeconfig.cache
 C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\obj\Debug\net5.0\CeLaFaremoMVC.csproj.AssemblyReference.cache
+C:\Users\bryan\source\repos\CeLaFaremoMVC\CeLaFaremoMVC\obj\Debug\net5.0\refint\CeLaFaremoMVC.dll
